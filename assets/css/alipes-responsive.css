@@ -237,29 +237,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-one__left {
@@ -564,34 +541,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
     .section-title__title {
@@ -611,6 +560,8 @@
     .about-one__img-box:before {
         display: none;
     }
+
+    .text-footer{font-size: 35px;}
 
     .about-one__right {
         margin-left: 0;
@@ -1212,32 +1163,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 1200px) and (max-width: 1442px) {}
 

@@ -20,6 +20,7 @@
 :root {
   --alipes-font: 'Manrope', sans-serif;
   --alipes-font-two: 'Teko', sans-serif;
+  --alipes-font-three: 'Inter', sans-serif;
   --alipes-reey-font: "reeyregular";
   --alipes-gray: #827e78;
   --alipes-gray-rgb: 130, 126, 120;
@@ -112,6 +113,7 @@ ol,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  list-style: none;
 }
 
 ::-webkit-input-placeholder {
@@ -289,7 +291,7 @@ ul {
   position: relative;
   display: block;
   margin-top: -11px;
-  margin-bottom: 46px;
+  margin-bottom: 0px;
 }
 
 .section-title__tagline {
@@ -4411,6 +4413,12 @@ text-align: right;
   display: block;
   background-color: var(--alipes-primary);
   margin-top: -269px;
+}
+.google-map2 {
+  position: relative;
+  display: block;
+  background-color: var(--alipes-primary);
+  
 }
 
 .google-map__one {
@@ -9715,7 +9723,7 @@ text-align: right;
   bottom: -2px;
   left: 0;
   right: 0;
-  background-color: var(--alipes-base);
+  background-color: var(--alipes-blue);
   opacity: 0;
   visibility: hidden;
   -webkit-transform-origin: top center;
@@ -10207,6 +10215,9 @@ text-align: right;
 .contact-page .container {
   max-width: 770px;
 }
+.contact-page .container2 {
+  max-width: 100%;
+}
 
 .contact-page__inner {
   position: relative;
@@ -10254,7 +10265,7 @@ text-align: right;
 
 .contact-page__btn {
   border: none;
-  background-color: var(--alipes-base);
+  background-color: var(--alipes-blue2);
   display: block;
   margin: 0 auto;
 }
@@ -12214,3 +12225,194 @@ video {
   letter-spacing: 0.04em;
   text-align: center;
   }
+.check-privacidad{
+      display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.text-blue {color:  var(--alipes-blue); font-size: 16px; font-family: var(--alipes-font-two); font-weight: 500;}
+.apartment-details-one__text-1{
+  font-family: var(--alipes-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  .img-logo{margin-top: 46px;}
+  .img-logo2{margin-top: 60px;}
+  .thankyou{font-family: var(--alipes-font-two);
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 120px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    }
+.section-title__tagline2{
+  font-family: var(--alipes-font);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #827E78;
+}
+.section-title__tagline3{
+  font-family: 'Manrope';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #827E78;
+}
+/*===========================
+1.10) choose area here
+===========================*/
+.choose {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+.choose_plan .choose_nav {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.choose_nav .choose_nav_content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 13px 63px -20px #888888;
+  padding: 3px;
+  list-style: none;
+}
+.choose_nav_content li .nav-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blackH1);
+  width: 130px;
+  height: 56px;
+  border-radius: 0;
+  font-family: var(--alipes-font-three);
+}
+.choose_nav_content li .nav-link.active {
+  background: var(--alipes-blue2);
+  color: var(--alipes-black);
+}
+/* list content  */
+.choose_list .choose_list_content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+.choose_list_content .choose_content {
+  box-shadow: 7px 59.0047px 60px -31.4692px rgba(18, 20, 29, 0.2);
+  background: var(--white);
+  padding: 60px 30px 140px;
+  position: relative;
+}
+.choose_content .package_name {
+  margin-bottom: 15px;
+}
+.choose_content .package_name p {
+  font-weight: 600;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.choose_content .package_price {
+  margin-bottom: 15px;
+}
+.choose_content .package_price h2 {
+  font-size: 36px;
+  line-height: 46px;
+  font-family: var(--alipes-font-two);
+  font-weight: 700;
+}
+.choose_content .package_price h2 span {
+  font-size: 22px;
+  line-height: 100%;
+  margin-right: 2px;
+}
+.choose_content .package_date {
+  display: block;
+}
+.choose_content .package_date span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+  display: block;
+  color: var(--blackDesH1);
+}
+.choose_content hr {
+  color: var(--blackH1);
+  margin: 30px 0px;
+}
+.choose_content .package_condition li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.choose_content .package_condition .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.choose_content .package_condition .content .thumb img {
+  max-width: 20px;
+}
+.choose_content .package_condition .content .text h6 {
+  line-height: 100%;
+  font-weight: 500;
+  font-family: var(--alipes-font-three);
+}
+.choose_content .package_submit {
+  position: absolute;
+  bottom: 40px;
+}
+/* hover area */
+.choose_list_content .choose_content:hover {
+  background: var(--alipes-blue2);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+.choose_list_content .choose_content:hover .package_name p,
+.choose_list_content .choose_content:hover .package_price h2,
+.choose_list_content .choose_content:hover .package_date span,
+.choose_list_content .choose_content:hover hr,
+.choose_list_content .choose_content:hover .package_condition .content .text h6
+{
+  color: var(--alipes-white);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  font-family: var(--alipes-font-three);
+}
+.choose_list_content .choose_content:hover .package_submit .mainButton.buttonH1 {
+  background: var(--alipes-white);
+  color: var(--alipes-black);
+  border: 1px solid var(--alipes-black);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+/*---------------------------
+1.10) choose area ends here
+---------------------------*/
+
+.mainButton.buttonH1 {
+  color: var(--alipes-black);
+  background: var(--alipes-white);
+  border: 1px solid var(--alipes-black);
+  padding: 15px 20px;
+  border-radius: 10px;
+}

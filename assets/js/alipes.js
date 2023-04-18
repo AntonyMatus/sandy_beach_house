@@ -1032,4 +1032,76 @@
 
   $('select:not(.ignore)').niceSelect();
 
+  // about hidden text
+  let hideTextAbout_btn = document.getElementById('hiddenText_btn_about');
+  let hideTextAbout = document.getElementById('hidden_about');
+
+  if(hideTextAbout_btn){
+    hideTextAbout_btn.addEventListener('click', aboutText);
+
+    function aboutText() {
+      hideTextAbout.classList.toggle('show2');
+      if(hideTextAbout.classList.contains('show2')){
+        hideTextAbout_btn.innerHTML = 'read less';
+      } else {
+        hideTextAbout_btn.innerHTML = 'view more';
+      }
+    };
+  }
+ 
+
+  // Step 1 hidden button
+  let hideText_btn = document.getElementById('hideText_btn');
+  let hideText = document.getElementById('hideText');
+
+  if(hideText_btn){
+    hideText_btn.addEventListener('click', toggleText_step1);
+
+  function toggleText_step1() {
+    hideText.classList.toggle('show2');
+    if (hideText.classList.contains('show2')) {
+      hideText_btn.innerHTML = 'READ LESS';
+    } else {
+      hideText_btn.innerHTML = 'LEARN MORE';
+    }
+    };
+  }
+  
+
+
+  // Step 3 hidden button
+  let hideText_btn_step3 = document.getElementById('hideText_btn_step3');
+  let hideText_step2 = document.getElementById('hiddenText2');
+
+  if(hideText_btn_step3){
+    hideText_btn_step3.addEventListener('click', toggleText_step3);
+    function toggleText_step3() {
+    hideText_step2.classList.toggle('show2');
+    if (hideText_step2.classList.contains('show2')) {
+      hideText_btn_step3.innerHTML = 'read less';
+    } else {
+      hideText_btn_step3.innerHTML = 'view more';
+    }
+  };
+  }
+
+  let hidden_btn_owning = document.getElementById('hidden_btn_owning');
+  let hidden_owning = document.getElementById('hidden_text_owning');
+
+  if(hidden_btn_owning){
+    hidden_btn_owning.addEventListener('click', hidden_owning_function);
+    function hidden_owning_function() {
+        hidden_owning.classList.toggle('show2');
+        if(hidden_owning.classList.contains('show2')){
+        hidden_btn_owning.innerHTML = 'Read Less';
+        } else {
+        hidden_btn_owning.innerHTML = 'View more';
+        }
+    };
+  }
+  
+  
+
+  
+
 })(jQuery);

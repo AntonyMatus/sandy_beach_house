@@ -1957,13 +1957,14 @@ ul {
   transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
 }
 
-.page-title-large span {
+.page-title-large span>a {
   position: relative;
   display: inline-block;
   background-color: var(--alipes-blue2);
   font-weight: 400;
   padding: 9px 20px 3px;
   margin-right: 20px;
+  color: var(--alipes-white);
 }
 
 .main-slider__sub-title span {
@@ -9199,7 +9200,7 @@ text-align: right;
 }
 
 .amenities__btn:before {
-  background-color: var(--alipes-black);
+  background-color: var(--alipes-blue2);
 }
 
 /*--------------------------------------------------------------
@@ -12416,3 +12417,5 @@ video {
   padding: 15px 20px;
   border-radius: 10px;
 }
+.hiden{display: none;}
+.show2{display: block;}

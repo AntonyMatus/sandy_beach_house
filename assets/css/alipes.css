@@ -12419,3 +12419,57 @@ video {
 }
 .hiden{display: none;}
 .show2{display: block;}
+.alt-font-teko{
+  font-family: var(--alipes-font-two);
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+.alt-font-TK{font-family: var(--alipes-font-two);}
+.color-option{
+  padding: 5px 14px;
+  border-radius: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.option-1{ background: green;}
+.option-2{ background: #F09000;}
+.option-3{ background: red;}
+
+.margin-2-rem-bottom{margin-bottom: 5rem;}
+.fz-40px{font-size: 40px;}
+.img-svg{
+  background-image: url('../images/cotizador/PLAYA_PALMERAS-1.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: center;
+  padding: 0 !important; 
+  position: inherit;
+  opacity: 0.6;
+}
+.cotizador-svg{width: 87%; margin-left: 44px; margin-top: 24px; vertical-align: unset; opacity: 0.6;}
+
+.cotizador-svg2{
+  width: 738px;
+  margin-left: -122px;
+  margin-top: 0px;
+  vertical-align: unset;
+  opacity: 0.6;
+  margin-bottom: -9px;
+  margin-right: -122px;
+  display: inline-block;
+}
+.cotizador-svg3{
+  width: 850px;
+  margin-left: 0;
+  margin-top: 70px;
+  vertical-align: unset;
+  opacity: 0.8;
+  margin-bottom: 70px;
+  margin-right: -20px;
+  display: inline-block;
+}
+

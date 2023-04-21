@@ -12450,6 +12450,15 @@ video {
   position: inherit;
   opacity: 0.6;
 }
+.img-svg2{
+  background-image: url('../images/cotizador/playa_irvine.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: center;
+  padding: 0 !important; 
+  position: inherit;
+  opacity: 0.6;
+}
 .cotizador-svg{width: 87%; margin-left: 44px; margin-top: 24px; vertical-align: unset; opacity: 0.6;}
 
 .cotizador-svg2{
@@ -12463,13 +12472,13 @@ video {
   display: inline-block;
 }
 .cotizador-svg3{
-  width: 850px;
-  margin-left: 0;
-  margin-top: 70px;
+  width: 1080px;
+  margin-left: 176px;
+  margin-top: 3px;
   vertical-align: unset;
   opacity: 0.8;
-  margin-bottom: 70px;
-  margin-right: -20px;
+  margin-bottom: -105px;
+  margin-right: -134px;
   display: inline-block;
 }
 

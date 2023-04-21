@@ -1,5 +1,6 @@
 // zoomin Zoomout
 var element = document.querySelector('#svg-container')
+var element2 = document.querySelector('#svg-container2')
 const screenWidth = window.screen.width
 
 var instance = panzoom(element, {
@@ -11,6 +12,14 @@ var instance = panzoom(element, {
     }
 })
 
+var instance2 = panzoom(element2, {
+    contain: 'inside',
+    minZoom: 1,
+    step: 2,
+    onTouch: function(e) {
+        return false;
+    }
+})
 const zoomIn = () => {
     let container = document.querySelector('#scene')
     let rect = container.getBBox();
@@ -27,6 +36,21 @@ const zoomOut = () => {
     instance.moveTo(0, 0)
 }
 
+const zoomIn2 = () => {
+    let container = document.querySelector('#scene2')
+    let rect = container.getBBox();
+    let width = (screenWidth <= 600) ? 10 : 5;
+    let height = (screenWidth <= 600) ? 14 : 10;
+    let cx = rect.x + rect.width/width;
+    let cy = rect.y + rect.height/height;
+    let zoomBy = 1.5;
+    instance2.zoomTo(cx, cy, zoomBy);
+}
+
+const zoomOut2 = () => {
+    instance2.zoomAbs(0, 0, 1)
+    instance2.moveTo(0, 0)
+}
 
 
 

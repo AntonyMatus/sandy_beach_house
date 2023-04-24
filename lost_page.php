@@ -58,6 +58,9 @@
     <link rel="stylesheet" href="assets/css/alipes.css" />
     <link rel="stylesheet" href="assets/css/alipes-responsive.css" />
 
+    <!-- Alpine -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
     <!-- Toast -->
@@ -412,7 +415,7 @@
                         <polygon class="cls-1" points="1794.38 1273.03 1802.24 1266.02 1816.06 1295.29 1806.7 1300.96 1794.38 1273.03"/>
                         <polygon class="cls-1" points="1802.79 1265.53 1810.64 1258.53 1825.38 1289.63 1825.49 1289.58 1816.67 1294.92 1802.79 1265.53"/>
                         <polygon
-                        onclick="getLotById(<?php echo $lots[19]->id; ?>)"
+                        @click="getLotById(<?php echo $lots[19]->id; ?>)"
                         data-available="<?php echo $lots[19]->available; ?>"
                         data-area="<?php echo $lots[19]->area; ?>"
                         data-number="<?php echo $lots[19]->number; ?>"
@@ -1180,11 +1183,6 @@
                                     Numero de Lote: <span x-text="lot.number"></span> <br>
                                 </p>
                             </div>
-                            <!-- <div class="col-4 custom-border-right">
-                                <p class="custom-font-size">
-                                    Precio Total: <span x-text="lot.total_price"></span>
-                                </p>
-                            </div> -->
                         </div>
                         <p x-show="lot.available === 1" class="custom-font-size text-center">
                         Este lote se encuentra <strong>Disponible</strong>, para mayor información acerca de nuestros lotes, favor de comunicarse vía Whatsapp con uno de nuestros asesores. ¡Gracias!
@@ -1234,17 +1232,7 @@
             </div>
         </footer>
         <!--Site Footer End-->
-
-         <!-- <polygon 
-                    @click="getLotById(<?php echo $lots[33]->id; ?>)"
-                    data-available="<?php echo $lots[33]->available; ?>"
-                    data-area="<?php echo $lots[33]->area; ?>"
-                    data-number="<?php echo $lots[33]->number; ?>"
-                    id="lot-<?php echo $lots[33]->id; ?>"
-                    class="cls-1" 
-                    points="510.55 153.45 499.28 165.41 521.83 185.88 534.39 174.02 510.55 153.45"/>
-                    end 44 a 54 -->
-    </div><!-- /.page-wrapper -->
+    </div>
 
 
     <div class="mobile-nav__wrapper">
@@ -1311,7 +1299,8 @@
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
     <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
     
-    <script></script>
+    <script src="assets/js/contact.js"></script>
+
     <!-- Popover -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>

@@ -21,7 +21,7 @@ function handlerContact() {
         },
         getLotById(id) {
             console.log("contact");
-            fetch(`../../backend/lots.php?id=${id}`)
+            fetch(`/backend/lost.php?id=${id}`)
             .then(res => res.json())
             .then(data => {
 
@@ -69,7 +69,7 @@ function handlerContact() {
                 const data_contact_lot = new FormData(form_contact_lot)
                 data_contact_lot.append('lot_number', this.lot.number)
 
-                fetch('/landing/backend/contact-lots.php', {
+                fetch('/backend/contact-lots.php', {
                     method: 'POST',
                     body: data_contact_lot,
                 })

@@ -21,7 +21,7 @@ function handlerContact() {
         },
         getLotById(id) {
             console.log("contact");
-            fetch(`/backend/lost.php?id=${id}`)
+            fetch(`/backend/lots.php?id=${id}`)
             .then(res => res.json())
             .then(data => {
 

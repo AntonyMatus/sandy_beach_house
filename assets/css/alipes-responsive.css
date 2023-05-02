@@ -534,6 +534,17 @@
         top: 0;
     }
 
+    .img-svg2{ width: auto;}
+    .cotizador-svg3{
+        width: 1080px;
+        margin-left: 13px;
+        margin-top: 3px;
+        vertical-align: unset;
+        opacity: 0.8;
+        margin-bottom: -103.6px;
+        margin-right: 0px;
+        display: inline-block;
+    }
 
 
 
@@ -1157,6 +1168,31 @@
 
     .page-header__inner {
         padding: 286px 0 183px;
+    }
+    .responsive{display: grid;}
+    .mb-responsive{margin-bottom: 3rem;}
+    .img-svg{width: auto;}
+    .img-svg2{width: auto;}
+    .cotizador-svg2{
+        width: 369px;
+        margin-left: -4px;
+        margin-top: 2.73px;
+        vertical-align: unset;
+        opacity: 0.6;
+        margin-bottom: -7px;
+        margin-right: -3px;
+        display: inline-block;
+    }
+    .cotizador-svg3{
+        width: 262px;
+        margin-left: 74px;
+        margin-top: 0px;
+        vertical-align: unset;
+        opacity: 0.6;
+        margin-bottom: -32px;
+        margin-right: 0px;
+        display: inline-block;
+
     }
 
 
